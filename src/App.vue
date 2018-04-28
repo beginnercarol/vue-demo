@@ -9,13 +9,13 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 
-// export default {
-//   name: 'App'
-// }
-@Component({})
-export default class App extends Vue{
-
+export default {
+  name: 'App'
 }
+// @Component({})
+// export default class App extends Vue{
+
+// }
 </script>
 
 <style>

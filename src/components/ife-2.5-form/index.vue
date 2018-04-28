@@ -1,6 +1,7 @@
 <template>
 <div class="ife-form">
     <input v-model="msg" >
+    <br/>
     <input type="checkbox" v-model="dataList" id="ck" value="carol"/>
     <label for="ck">Carol</label>
     <input type="checkbox" v-model="dataList" id="bl" value="Jack"/>
@@ -16,7 +17,6 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 @Component({
     props: {
-        
     }
 })
 export default class App extends Vue {

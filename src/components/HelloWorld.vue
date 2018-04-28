@@ -2,18 +2,21 @@
   <div class="hello">
     <!-- <ife-event/> -->
     <ife-form />
+    <vue-j-s-x />
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from 'vue';
-import IfeEvent from './ife-2.4-event/index';
-import IfeForm from './ife-2.5-form/index';
+import IfeEvent from './ife-2.4-event/index.vue';
+import IfeForm from './ife-2.5-form/index.vue';
+import VueJSX from './vue-jsx/index.vue';
 export default Vue.extend({
   name: 'HelloWorld',
   components: {
     IfeEvent,
-    IfeForm
+    IfeForm,
+    VueJSX
   },
   data () {
     return {
