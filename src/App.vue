@@ -6,6 +6,7 @@
 </template>
 
 <script lang="ts">
+import '../src/assets/iconfont/iconfont.css';
 import Vue from 'vue';
 import Component from 'vue-class-component';
 

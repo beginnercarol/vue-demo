@@ -1,0 +1,26 @@
+.mob-app{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #999;
+    color: #000;
+    font-size: 20px;
+    .navbar{
+        background-color: #f0e4e4;
+        a{
+            color: inherit;
+            margin: 0 10px;
+            text-decoration: none;
+            i{
+                margin-right:5px;
+            }
+        }
+        i{
+            margin-right:5px; 
+        }
+        span{
+            margin-right:5px;
+        }
+    }
+    
+}

@@ -1,5 +1,6 @@
 <template>
 <div class="ife-form">
+    <div>{{this.getMsg}}</div>
     <input v-model="msg" >
     <br/>
     <input type="checkbox" v-model="dataList" id="ck" value="carol"/>
@@ -17,13 +18,15 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 @Component({
     props: {
+        formTs: String
     }
 })
-export default class App extends Vue {
-    msg: string = 'ts';
+export default class IfeForm extends Vue {
+    formTs: string;
+    msg = "msg" + this.formTs;
     dataList: Array<string|null> = [];
-    getMsg(){
-
+    get getMsg(){
+        return this.msg + this.formTs;
     }
     submitForm(){
         console.log("msg",this.msg);
